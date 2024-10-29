@@ -157,3 +157,17 @@ span {
         margin: 0 0.5rem; /* Reduce margins for smaller screens */
     }
 }
+
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 1.5rem; /*adjust heading size */
+    }
+
+    .home-content p {
+        font-size: 1rem; /*adjust paragraph size */
+    }
+
+    .social-icon-1, .social-icon-2, .social-icon-3 {
+        font-size: 3rem; /* Smaller icons on very small screens */
+    }
+}
