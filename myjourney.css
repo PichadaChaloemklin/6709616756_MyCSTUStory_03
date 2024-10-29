@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #B4CFEC;
+}
+
+.nav-con {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-con a:hover {
+    background-color: gray;
+    color: black;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    background: grey;
+}
+
+.firstyear-content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    position: relative;
+}
+
+.firstyear-content:hover {
+    background-color: #FF69B4;
+    color: white;
+}
+
+.secondyear-content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    position: relative;
+}
+
+.secondyear-content:hover {
+    background-color: #FF69B4;
+    color: white;
+}
+
+.thirdyear-content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    position: relative;
+}
+
+.thirdyear-content:hover {
+    background-color: #FF69B4;
+    color: white;
+}
+
+.forthyear-content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    position: relative;
+}
+
+.forthyear-content:hover {
+    background-color: #FF69B4;
+    color: white;
+}
