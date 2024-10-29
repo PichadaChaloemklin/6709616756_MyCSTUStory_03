@@ -11,11 +11,12 @@ body {
 .container {
     max-width: 1140px;
     margin: 0 auto;
+    padding: 0 20px; /* Add padding for smaller screens */
 }
 
 .nav-con {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end; /* Changed to flex-end for consistency */
     align-items: center;
     height: 60px;
 }
@@ -31,8 +32,7 @@ body {
 
 .menu li {
     list-style: none;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 0 1rem; /* Simplified margin */
 }
 
 a {
@@ -49,24 +49,22 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column; /* Stack on smaller screens */
 }
 
 .home-content h1 {
     font-size: 2rem;
-    margin-left: 1rem;
+    margin: 1rem; /* Simplified margin */
     text-align: center;
-    margin-right: 1rem;
 }
 
 .home-content p {
     font-size: 1.5rem;
-    margin-left: 1rem;
+    margin: 1rem;
     text-align: center;
-    margin-right: 1rem;
-    margin-top: 1rem;
 }
 
-span{
+span {
     color: rgba(51, 89, 211, 0.747);
 }
 
@@ -75,26 +73,28 @@ span{
 }
 
 .home-img img {
-    position: relative;
     border-radius: 50%;
-    width: 20vW;
+    width: 20vw; 
+    max-width: 200px;
     margin-top: 1.5rem;
-    margin-left: 1.5rem;
 }
 
 .about-content {
     display: flex;
+    flex-direction: column; 
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center; 
 }
 
 .about-content video {
     margin-top: 1rem;
+    width: 100%;
+    max-width: 350px; 
+    height: auto;
 }
 
 .about-content p {
     text-align: center;
-    align-items: center;
     font-size: 1.5rem;
 }
 
@@ -102,36 +102,58 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .social-icon p {
     font-size: 1.5rem;
-    float: left;
-    justify-content: left;
-    align-items: left;
     display: flex;
+}
+
+.social-icon-1, .social-icon-2, .social-icon-3 {
+    margin: 1.5rem;
+    font-size: 4.5rem;
 }
 
 .social-icon-1 {
     color: #FF00FF;
-    margin-top: 1.5rem;
-    font-size: 4.5rem;
-    padding-top: 3rem;
-    margin-bottom: 2.5rem;
 }
 
 .social-icon-2 {
     color: #D05340;
-    margin-top: 1.5rem;
-    font-size: 4.5rem;
-    padding-top: 3rem;
-    margin-bottom: 2.5rem;
 }
 
 .social-icon-3 {
     color: #1877F2;
-    margin-top: 1.5rem;
-    font-size: 4.5rem;
-    padding-top: 3rem;
-    margin-bottom: 2.5rem;
+}
+
+/* Media Queries*/
+@media (max-width: 768px) {
+    .nav-con {
+        flex-direction: column;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-content video {
+        width: 90%; /* Adjust video width */
+    }
+
+    .home-content h1 {
+        font-size: 1.8rem; /* Adjust heading size */
+    }
+
+    .home-content p {
+        font-size: 1.2rem; /* Adjust paragraph size */
+    }
+
+    .social-icon p {
+        margin: 0 0.5rem; /* Reduce margins for smaller screens */
+    }
 }
