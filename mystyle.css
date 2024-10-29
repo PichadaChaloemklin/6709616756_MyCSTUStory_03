@@ -170,6 +170,8 @@ span {
     .social-icon-1, .social-icon-2, .social-icon-3 {
         font-size: 3rem; /* Smaller icons on very small screens */
     }
+
+/*Change navbar from top to left */
     .nav-con {
         display: block;
     }
@@ -185,4 +187,5 @@ span {
         height: 1000px;
         margin-top: 0;
     }
+
 }
